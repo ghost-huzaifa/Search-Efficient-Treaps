@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1703611427 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"AVL.h"
+	"Treap.h"
+
+1703611182 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\include\avl.h
+	"BST.h"
+
+1702743459 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\include\bst.h
+	"BInaryTree.h"
+
+1703607810 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\include\binarytree.h
+	<iostream>
+	<queue>
+
+1703611074 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\src\avl.cpp
+	"../include/AVL.h"
+	<string>
+	<algorithm>
+
+1703606451 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\src\binarytree.cpp
+	"BInaryTree.h"
+	<queue>
+
+1703607046 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\src\bst.cpp
+	"BST.h"
+
+1703611636 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\src\treap.cpp
+	"Treap.h"
+	<string>
+
+1703611074 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa lab\lab 09\lab 09\include\treap.h
+	"AVL.h"
+
+1703684462 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"AVL.h"
+	"Treap.h"
+
+1703611182 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\include\avl.h
+	"BST.h"
+
+1702743459 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\include\bst.h
+	"BInaryTree.h"
+
+1703683940 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\include\binarytree.h
+	<iostream>
+	<queue>
+
+1703684309 c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\include\treap.h
+	"BST.h"
+
+1703607046 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\src\bst.cpp
+	"BST.h"
+
+1703675818 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\src\avl.cpp
+	"../include/AVL.h"
+	<string>
+	<algorithm>
+
+1703684201 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\src\binarytree.cpp
+	"BInaryTree.h"
+	<queue>
+
+1703684488 source:c:\users\pmls\onedrive - higher education commission\3rd semester\dsa\project\treaps experiment files\src\treap.cpp
+	"Treap.h"
+	<string>
+
