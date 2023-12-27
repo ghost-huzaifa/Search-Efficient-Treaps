@@ -1,0 +1,302 @@
+FIND A NUMBER:
+2147482177
+Element is present in the TREAP
+Elapsed Time to Find: 5.7
+Elapsed Time in AVL: 3.5
+Element is present in the TREAP
+Elapsed Time to Find: 0.7
+Elapsed Time in AVL: 1
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.6
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.7
+Elapsed Time in AVL: 1.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.4
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.4
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 1
+Element is present in the TREAP
+Elapsed Time to Find: 0.5
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.5
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.5
+Elapsed Time in AVL: 0.7
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.6
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.7
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.5
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.5
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.1
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.1
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.4
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.4
+Elapsed Time in AVL: 17.3
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4
+Element is present in the TREAP
+Elapsed Time to Find: 0.2
+Elapsed Time in AVL: 0.2
+Element is present in the TREAP
+Elapsed Time to Find: 0.3
+Elapsed Time in AVL: 0.4

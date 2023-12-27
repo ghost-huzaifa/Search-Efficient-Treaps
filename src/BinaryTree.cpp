@@ -1,4 +1,4 @@
-#include "BInaryTree.h"
+#include "BinaryTree.h"
 #include <queue>
 
 

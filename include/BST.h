@@ -1,5 +1,5 @@
 #pragma once
-#include "BInaryTree.h"
+#include "BinaryTree.h"
 
 
 template <class Comparable>

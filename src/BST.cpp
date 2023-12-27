@@ -29,20 +29,20 @@ BST<Comparable> :: ~BST()                            //Destructor
 template <class Comparable>
 bool BST<Comparable> :: search(const Comparable data)           //Contains
 {
-    if(BinaryTree<Comparable>::tree_root != NULL)
+    if (BinaryTree<Comparable>::tree_root != NULL)
     {
-        BinaryNode<Comparable>* current = BinaryTree<Comparable>::tree_root;
-        while(current!=NULL)
+        BinaryNode<Comparable> *current = BinaryTree<Comparable>::tree_root;
+        while (current != NULL)
         {
-            if(current->element == data)
+            if (current->element == data)
                 return true;
-            if(current->element < data)
+            else if (current->element < data)
                 current = current->right;
-            if(current->element > data)
+            else 
                 current = current->left;
         }
     }
-    return false;
+    return false;    
 }
 
 template <class Comparable>

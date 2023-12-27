@@ -1,0 +1,140 @@
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <chrono>
+#include "include/Treap.h"
+#include "include/AVL.h"
+
+using namespace std;
+
+
+void createMenu()
+{
+  //system("clear"); //On Linux
+  //system("CLS"); //On Windows
+  cout << " _______________________________________________________________" << endl;
+  cout << " ***************************************************************" << endl;
+  for(int i = 0; i < 3; i++)
+  {
+    
+    cout << "*\t\t\t";
+    if(i == 1)
+    {
+      cout << "MAIN Menu";
+      cout << "\t\t\t\t*" << endl;
+      cout << "*\t\t";
+      cout << "1- Search Element";
+      cout << "\t\t\t\t*" << endl;
+
+      cout << "*\t\t";
+      cout << "2- Insert Element";
+      cout << "\t\t\t\t*" << endl;
+
+      cout << "*\t\t";
+      cout << "3- Delete Element";
+      cout << "\t\t\t\t*" << endl;
+    }
+    else{
+      cout << "\t\t\t\t\t*" << endl;
+    }
+  }
+  cout << " ***************************************************************" << endl;
+  cout << ">> ";
+
+
+}
+
+void selectedOption(int option, Treap<int> &treap, AVL<int> &avl){
+
+  switch (option) {
+    case 1:
+      {
+             //system("clear");
+             cout << " ***************************************************************" << endl;
+             cout << "FIND A NUMBER: " << endl;
+             int num; double avlArr[1000]; double treapArr[1000]; int k = 0, l = 0;
+             if(cin >> num){
+               for(int i = 0; i < 1000; i++){ 
+                auto startTime = std::chrono::high_resolution_clock::now();
+                int found = treap.search(num);
+                auto endTime = std::chrono::high_resolution_clock::now();
+                std::chrono::duration<double, std::micro> elapsedTime = endTime - startTime;
+
+                auto startTimeAVL = std::chrono::high_resolution_clock::now();
+                int foundAVL = avl.search(num);
+                auto endTimeAVL = std::chrono::high_resolution_clock::now();
+                std::chrono::duration<double, std::micro> elapsedTimeAVL = endTimeAVL - startTimeAVL;
+                if(found)
+                {
+                   treapArr[k] =elapsedTime.count() * 1000;
+                   avlArr[l] = elapsedTimeAVL.count() * 1000;
+                   l++; k++;
+                }
+                else{
+                  cout << "Element NOT Found" << endl;
+                }
+              }
+               cout << "TreapsTime = [";
+               for(int i = 0; i < k; i++){
+                   cout << treapArr[k] << ", ";
+               }
+               cout << "]" << endl;
+               
+               cout << "AVLTime = [";
+               for(int i = 0; i < l; i++){
+                   cout << avlArr[i] << ", ";
+                 }
+               cout << "]" << endl;
+             }
+             else {
+               cout << "Invald Input" << endl;
+             }
+             break;
+           }
+    case 2:
+      {
+        treap.traverse_inOrder();
+        break;
+      }
+    default:
+        
+      break;
+  }
+  //system("PAUSE");
+
+}
+
+
+void insertRandomNum(Treap<int> &treap, AVL<int> &avl){
+  srand(time(0));
+  for(int i = 0; i < 1000; i++){
+    int random = rand();
+    treap.insert(random, rand()%1000);
+    avl.insert(random);
+  }
+}
+
+int main () {
+  Treap<int> treap;
+  AVL<int> avl;
+  insertRandomNum(treap, avl);
+  treap.insert(1000, 1000);
+  treap.printRootValue();
+  treap.traverse_preOrder();
+  int opt;
+  while (1) {
+    createMenu(); 
+    if (cin >> opt){
+      selectedOption(opt, treap, avl);   
+      treap.traverse_preOrder();
+   }
+    else {
+      std::cout << "Invalid input. Please enter an integer.\n";
+      std::cin.clear();
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+      continue;
+    }
+  }
+ 
+  return 0;
+}
