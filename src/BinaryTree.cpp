@@ -213,7 +213,6 @@ void BinaryTree<Comparable>::deleteTree(BinaryNode<Comparable>* root)  //deletes
         return;
     deleteTree(root->left);
     deleteTree(root->right);
-    cout << "Deleting node: " << root->element << endl;
     delete root;
 }
 

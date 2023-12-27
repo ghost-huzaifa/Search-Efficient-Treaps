@@ -53,12 +53,6 @@ CMakeFiles/output.dir/main.cpp.o: ../main.cpp \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/11/bits/std_abs.h \
-  /usr/include/c++/11/ctime \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -121,6 +115,11 @@ CMakeFiles/output.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
@@ -179,10 +178,6 @@ CMakeFiles/output.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/bits/parse_numbers.h \
   ../include/Treap.h \
   ../include/BST.h \
   ../include/BinaryTree.h \
@@ -198,7 +193,11 @@ CMakeFiles/output.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_queue.h \
   /usr/include/c++/11/bits/uses_allocator.h \
-  ../include/AVL.h
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h
 
 CMakeFiles/output.dir/src/AVL.cpp.o: ../src/AVL.cpp \
   /usr/include/stdc-predef.h \
@@ -987,6 +986,12 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/c++/11/bits/stl_relops.h:
 
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/ratio:
+
 /usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/bits/stl_heap.h:
@@ -1002,12 +1007,6 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 ../include/BST.h:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/limits:
-
-/usr/include/c++/11/ratio:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -1087,9 +1086,9 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/c++/11/ostream:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -1123,13 +1122,21 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/include/c++/11/iosfwd:
+
+/usr/include/c++/11/ctime:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/c++/11/queue:
+../include/BinaryTree.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/c++/11/bits/basic_string.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/c++/11/cctype:
 
@@ -1151,15 +1158,11 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/alloca.h:
 
-/usr/include/c++/11/ctime:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/c++/11/iosfwd:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/features-time64.h:
 
@@ -1181,29 +1184,17 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/c++/11/ostream:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/time.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 ../main.cpp:
 
-../include/BinaryTree.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+/usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -1235,12 +1226,6 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
 /usr/include/c++/11/deque:
 
 /usr/include/c++/11/ios:
@@ -1269,19 +1254,13 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
 /usr/include/c++/11/bits/nested_exception.h:
 
-/usr/include/c++/11/bits/uniform_int_dist.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -1297,6 +1276,18 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
+/usr/include/c++/11/queue:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
 /usr/include/c++/11/exception:
 
 /usr/include/c++/11/ext/string_conversions.h:
@@ -1310,6 +1301,14 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 /usr/include/c++/11/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/c++/11/typeinfo:
 
@@ -1338,12 +1337,6 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/c++/11/debug/assertions.h:
 
@@ -1388,6 +1381,12 @@ CMakeFiles/output.dir/src/Treap.cpp.o: ../src/Treap.cpp \
 /usr/include/pthread.h:
 
 /usr/include/sched.h:
+
+/usr/include/c++/11/bits/stl_pair.h:
+
+/usr/include/c++/11/ext/atomicity.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 

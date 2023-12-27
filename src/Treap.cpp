@@ -42,9 +42,9 @@ Treap<Comparable> :: Treap(const Treap<Comparable> &t) : BST<Comparable>(t) {}
  *
  */
 template <class Comparable>
-void Treap<Comparable> :: insert(const Comparable x, int priority)
+void Treap<Comparable> :: insert(const Comparable x)
 {
-    insert(x, priority, BinaryTree<Comparable> :: tree_root);
+    insert(x, BinaryTree<Comparable> :: tree_root);
 }
 
 
@@ -99,24 +99,24 @@ Treap<Comparable> :: ~Treap() {}
  *
  */
 template <class Comparable>
-void Treap<Comparable> :: insert(const Comparable x, int priority, BinaryNode<Comparable>* &root)
+void Treap<Comparable> :: insert(const Comparable x, BinaryNode<Comparable>* &root)
 {
     if (root == NULL)                                                       //No node exists at given root
     {
         root = new BinaryNode<Comparable>;
         root->element = x;
-        root->priority = priority;
+        root->priority = rand()%_nsePriorityLimit;
         root->left = root->right = NULL;
     }
     else if (x < root->element)                                             //Search Left sub-tree for insertion
     {
-        insert(x, priority, root->left);
+        insert(x, root->left);
         if (root->left != NULL && root->left->priority > root->priority)    //Priorities Max Heap Imbalance check
             root = singleRightRotation(root);
     }
     else if (x > root->element)                                             //Search Right sub-tree for insertion
     {
-        insert(x, priority, root->right);
+        insert(x, root->right);
         if (root->right != NULL && root->right->priority > root->priority)  //Priorities Max Heap Imbalance check
             root = singleLeftRotation(root);
     }
@@ -184,19 +184,59 @@ bool Treap<Comparable> :: search(const Comparable x, BinaryNode<Comparable>* &ro
     if (root == NULL)
         return false;
     if (x < root->element)
-        return search(x, root->left);
+    {
+      bool result = search(x, root->left);
+      
+        if (root->left && root->left->priority > root->priority)
+        {
+            root = singleRightRotation(root);
+        }
+        else if (root->right && root->right->priority > root->priority)
+        {
+            root = singleLeftRotation(root);
+        }
+        return result;
+
+    }
     else if (x > root->element)
-        return search(x, root->right);
+    {
+      bool result = search(x, root->right);
+      
+        if (root->left && root->left->priority > root->priority)
+        {
+            root = singleRightRotation(root);
+        }
+        else if (root->right && root->right->priority > root->priority)
+        {
+            root = singleLeftRotation(root);
+        }
+        return result;
+    }
     else
     {
         // Key found, increase priority by 1
-        root->priority++;
-
+        /*We will have to implement some method so that when an element is searched
+         * its priority must change and if it is searched for the first
+         * then it must percolate above those elements who are never searched.
+         * If it has been searched more than once, then it must percolate above according
+         * to its search frequency.*/
+        if(root->priority < _nsePriorityLimit){
+          root->priority = _nsePriorityLimit;
+          
+        }
+        else {
+          root->priority = (int)((float)root->priority * 1.1);
+        }
         // Check max heap property and perform rotation if needed
         if (root->left && root->left->priority > root->priority)
+        {
             root = singleRightRotation(root);
+        }
         else if (root->right && root->right->priority > root->priority)
+        {
             root = singleLeftRotation(root);
+        }
+
         return true;
     }
     return false;
