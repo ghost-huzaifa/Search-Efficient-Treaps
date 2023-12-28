@@ -5,8 +5,8 @@
 using namespace std;
 
 int main(){
-  long int size = 10000;
- 
+  /*long int size = 10000;
+
  for(int i = 0; i < 4; i++){
    Treap<int>* treap = new Treap<int>;
    for(int i = 0; i < size; i++)
@@ -41,7 +41,8 @@ int main(){
     delete treap;
     size *= 10;
   }
-
+*/
+    Treap<int> treap;
 
   return 0;
 }

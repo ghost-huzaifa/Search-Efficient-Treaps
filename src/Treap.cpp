@@ -1,5 +1,8 @@
 #include "Treap.h"                  // Included Libraries / Header Files
 #include <string>
+#include <sstream>
+#include <fstream>
+#include <type_traits>
 
 template class Treap<int>;          //Template classes of Treap
 template class Treap<float>;
@@ -8,6 +11,8 @@ template class Treap<char>;
 template class Treap<std::string>;
 template class Treap<short>;
 template class Treap<long>;
+template <class Comparable>
+Comparable convertFromString(const std::string& str);
 
 
 /*************************************************** PUBLIC Functions *********************************************************/
@@ -186,7 +191,7 @@ bool Treap<Comparable> :: search(const Comparable x, BinaryNode<Comparable>* &ro
     if (x < root->element)
     {
       bool result = search(x, root->left);
-      
+
         if (root->left && root->left->priority > root->priority)
         {
             root = singleRightRotation(root);
@@ -201,7 +206,7 @@ bool Treap<Comparable> :: search(const Comparable x, BinaryNode<Comparable>* &ro
     else if (x > root->element)
     {
       bool result = search(x, root->right);
-      
+
         if (root->left && root->left->priority > root->priority)
         {
             root = singleRightRotation(root);
@@ -222,7 +227,7 @@ bool Treap<Comparable> :: search(const Comparable x, BinaryNode<Comparable>* &ro
          * to its search frequency.*/
         if(root->priority < _nsePriorityLimit){
           root->priority = _nsePriorityLimit;
-          
+
         }
         else {
           root->priority = (int)((float)root->priority * 1.1);
@@ -293,7 +298,60 @@ BinaryNode<Comparable>* Treap<Comparable> :: singleRightRotation(BinaryNode<Comp
  *
  */
  template <class Comparable>
- void Treap<Comparable> ::  printRootValue()
+ void Treap<Comparable> :: printRootValue()
  {
      cout << " " << BinaryTree<Comparable> :: tree_root->element << " Priority: " << BinaryTree<Comparable> :: tree_root->priority << endl;
  }
+
+
+
+ /** \brief
+ * Read the provided .csv file and insert its content into treap
+ * \param .csv file
+ * \param treap for insertion
+ * \return void
+ *
+ */
+template <class Comparable>
+void insertValuesFromCSV(const std::string& filename, Treap<Comparable>& treap)
+{
+    std::ifstream file(filename);
+
+    if (!file.is_open())
+    {
+        std::cerr << "Error opening file: " << filename << std::endl;
+        return;
+    }
+
+    std::string line;
+    while (std::getline(file, line))
+    {
+        std::istringstream iss(line);
+        std::string valueStr;
+
+        while (std::getline(iss, valueStr, ','))
+        {
+            Comparable value = convertFromString<Comparable>(valueStr);
+            treap.insert(value);
+        }
+    }
+    cout << "Values has been inserted from file successfully ! " << endl;
+    file.close();
+}
+
+
+
+/** \brief
+ * Convert the string to desirable template type
+ * \param string to be converted
+ * \return converted comparable value
+ *
+ */
+template <class Comparable>
+Comparable convertFromString(const std::string& str)
+{
+    istringstream stringStream(str);
+    Comparable value;
+    stringStream >> value;
+    return value;
+}
