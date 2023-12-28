@@ -7,17 +7,17 @@ template <class Comparable>
 class Treap : public BST <Comparable>
 {
 public:
-    Treap();
+    Treap();                                        //Constructors
     Treap(const Treap<Comparable> &t);
 
-    void insert(const Comparable x);
+    void insert(const Comparable x);                //General Functions
     void remove(const Comparable x);
     bool search(const Comparable x);
 
     void readCSV(const string& filename);           //File Handling Function
     void printRootValue();
 
-    virtual ~Treap();
+    virtual ~Treap();                               //Destructor
 
 private:
     int _nsePriorityLimit = 1000;                                                           //Maximum Priority Limit for non-searched element
@@ -28,8 +28,6 @@ private:
 
     BinaryNode<Comparable>* singleLeftRotation (BinaryNode<Comparable>* &k2);               //Rotation Functions to maintain Max. Heap property
     BinaryNode<Comparable>* singleRightRotation(BinaryNode<Comparable>* &k2);
-
-
 };
 
 #endif // TREAP_H

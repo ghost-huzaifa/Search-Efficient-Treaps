@@ -6,30 +6,30 @@ template <class Comparable>
 class BST : public BinaryTree<Comparable>
 {
 public:
-//constructors
+                                                                        //constructors
     BST();
     BST(BinaryNode<Comparable>* root);
-//destructor
+                                                                        //destructor
     virtual ~BST();
-//search an element
+                                                                        //search an element
     bool search(const Comparable data);
-//find minimum element
+                                                                        //find minimum element
     BinaryNode<Comparable>* findMin();
-//find maximum element
+                                                                        //find maximum element
     BinaryNode<Comparable>* findMax();
-//compose x into a tree
+                                                                        //compose x into a tree
     virtual void insert(const Comparable data);
-//decompose x from a tree
+                                                                        //decompose x from a tree
     void remove(const Comparable data);
 private:
-//compose x into a tree (recursive insert)
+                                                                        //compose x into a tree (recursive insert)
     void insert(const Comparable data, BinaryNode<Comparable>*& root);
-//decompose x from a tree (recursive delete)
+                                                                        //decompose x from a tree (recursive delete)
     void remove(const Comparable data, BinaryNode<Comparable>*& root);
 protected:
-//find minimum element recursively
+                                                                        //find minimum element recursively
     BinaryNode<Comparable>* findMin(BinaryNode<Comparable>* root);
-//find maximum element recursively
+                                                                        //find maximum element recursively
     BinaryNode<Comparable>* findMax(BinaryNode<Comparable>* root);
 };
 

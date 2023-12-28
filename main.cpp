@@ -48,7 +48,8 @@ int main(){
     do
     {
         int element, option;
-        cout << "1. Insert Element" << endl
+        cout << endl << "***************************************************************************" << endl
+            << "1. Insert Element" << endl
             << "2. Remove Element" << endl
             << "3. Search Element" << endl
             << "4. InOrder Traversal" << endl

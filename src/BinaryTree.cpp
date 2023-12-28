@@ -2,18 +2,13 @@
 #include <queue>
 
 
-template class BinaryTree<int>;
+template class BinaryTree<int>;                         //Template classes of BinaryTree
 template class BinaryTree<float>;
 template class BinaryTree<double>;
 template class BinaryTree<char>;
 template class BinaryTree<string>;
 template class BinaryTree<short>;
 template class BinaryTree<long>;
-
-
-template <class Comparable>
-BinaryNode<Comparable>* deepCopy(BinaryNode<Comparable>* root);
-
 
 template <class Comparable>
 BinaryTree<Comparable>::BinaryTree()
