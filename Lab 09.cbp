@@ -34,12 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/AVL.h" />
 		<Unit filename="include/BST.h" />
 		<Unit filename="include/BinaryTree.h" />
 		<Unit filename="include/Treap.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/AVL.cpp" />
 		<Unit filename="src/BST.cpp" />
 		<Unit filename="src/BinaryTree.cpp" />
 		<Unit filename="src/Treap.cpp" />

@@ -9,10 +9,14 @@ class Treap : public BST <Comparable>
 public:
     Treap();
     Treap(const Treap<Comparable> &t);
+
     void insert(const Comparable x);
     void remove(const Comparable x);
     bool search(const Comparable x);
+
+    void readCSV(const string& filename);           //File Handling Function
     void printRootValue();
+
     virtual ~Treap();
 
 private:
@@ -26,7 +30,6 @@ private:
     BinaryNode<Comparable>* singleRightRotation(BinaryNode<Comparable>* &k2);
 
 
-    void insertValuesFromCSV(const string& filename, Treap<Comparable> &t);           //File Handling Functions
 };
 
 #endif // TREAP_H

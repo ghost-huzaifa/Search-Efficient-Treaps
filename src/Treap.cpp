@@ -313,7 +313,7 @@ BinaryNode<Comparable>* Treap<Comparable> :: singleRightRotation(BinaryNode<Comp
  *
  */
 template <class Comparable>
-void insertValuesFromCSV(const std::string& filename, Treap<Comparable>& treap)
+void Treap<Comparable> :: readCSV(const std::string& filename)
 {
     std::ifstream file(filename);
 
@@ -332,7 +332,7 @@ void insertValuesFromCSV(const std::string& filename, Treap<Comparable>& treap)
         while (std::getline(iss, valueStr, ','))
         {
             Comparable value = convertFromString<Comparable>(valueStr);
-            treap.insert(value);
+            insert(value);
         }
     }
     cout << "Values has been inserted from file successfully ! " << endl;

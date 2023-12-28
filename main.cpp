@@ -43,6 +43,9 @@ int main(){
   }
 */
     Treap<int> treap;
+    treap.readCSV("dataset.csv");
+    treap.printRootValue();
+    treap.traverse_inOrder();
 
   return 0;
 }
