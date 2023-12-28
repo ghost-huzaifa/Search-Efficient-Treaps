@@ -157,21 +157,28 @@ void Treap<Comparable> :: remove(const Comparable x, BinaryNode<Comparable>* &ro
         remove(x, root->right);
     else if (root->left != NULL && root->right != NULL)
     {
-        root->element = BST<Comparable>::findMin(root->right)->element;
-        remove(root->element, root->right);
+        bool condition = root->left->priority > root->right->priority;
+        if (condition)
+        {
+            root->element = root->left->element;
+            root->priority = root->left->priority;
+            remove(root->element, root->left);
+        }
+        else
+        {
+            root->element = root->right->element;
+            root->priority = root->right->priority;
+            remove(root->element, root->right);
+        }
     }
     else
     {
         BinaryNode<Comparable>* oldNode = root;
         root = (root->left != NULL) ? root->left : root->right;
         delete oldNode;
+        cout << "Element has been deleted ! " << endl;
     }
 
-    // Check max heap property and perform rotation if needed
-    if (root->left != NULL && root->left->priority > root->priority)
-        root = singleRightRotation(root);
-    else if (root->right != NULL && root->right->priority > root->priority)
-        root = singleLeftRotation(root);
 }
 
 
@@ -315,30 +322,29 @@ BinaryNode<Comparable>* Treap<Comparable> :: singleRightRotation(BinaryNode<Comp
 template <class Comparable>
 void Treap<Comparable> :: readCSV(const std::string& filename)
 {
-    std::ifstream file(filename);
+    ifstream file(filename);
 
     if (!file.is_open())
     {
-        std::cerr << "Error opening file: " << filename << std::endl;
+        cout << "Error opening file: " << filename << endl;
         return;
     }
 
-    std::string line;
-    while (std::getline(file, line))
+    string line;
+    while (getline(file, line))
     {
-        std::istringstream iss(line);
-        std::string valueStr;
+        istringstream stringStream(line);
+        string valueString;
 
-        while (std::getline(iss, valueStr, ','))
+        while (std::getline(stringStream, valueString, ','))
         {
-            Comparable value = convertFromString<Comparable>(valueStr);
+            Comparable value = convertFromString<Comparable>(valueString);
             insert(value);
         }
     }
     cout << "Values has been inserted from file successfully ! " << endl;
     file.close();
 }
-
 
 
 /** \brief
