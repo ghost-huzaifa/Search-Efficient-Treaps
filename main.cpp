@@ -1,17 +1,16 @@
-#include <cstdlib>
 #include <iostream>
 #include "include/Treap.h"
-#include <chrono>
 using namespace std;
 
 int main(){
-   Treap<int> treap;
-    treap.readCSV("dataset.csv");
+    Treap<int> treap;
+    treap.readCSV("dataset.csv");       //Read data from csv file
+
     bool flag = 0;
     do
     {
         int element, option;
-        cout << endl << "************************************************************" << endl
+        cout << endl << "************************************************************" << endl      //Display Menu
             << "*      FREQSEARCH - A frequency based searching system     *" << endl
             << "************************************************************" << endl
             << "\t1. Insert Element" << endl
@@ -22,7 +21,7 @@ int main(){
             << "\t6. Exit" << endl << endl
             << "Option : ";
         cin >> option;
-        switch(option)
+        switch(option)                  //Select operation based on the option selected
         {
         case 1:
             cout << "Enter Element to Insert : ";
